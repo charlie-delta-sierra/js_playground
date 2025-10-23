@@ -1,0 +1,47 @@
+:root {
+    --primary-black: #1f2937;
+    --primary-white: #f3f4f6;
+    --ring-size: 200px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* .cronometer-svg {
+    Remove rotation to make progress clockwise
+    transform: rotate(-90deg);
+} */
+
+.timer-bg {
+    stroke: var(--primary-white);
+    stroke-width: 12;
+    fill: none;
+}
+
+#timer-progress {
+    stroke: var(--primary-black);
+    stroke-width: 12;
+    fill: none;
+    transition: stroke-dashoffset 0.1s linear;
+}
+
+.center-time {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-black);
+    pointer-events: none;
+}
+
+.label-selected {
+    background-color: #8aa8d3 !important; /* gray-700 */
+    color: #fff !important;
+    font-weight: 600;
+    box-shadow: 0 0 0 2px #4b5563;
+    border-radius: 0.5rem;
+    transition: background 0.2s, color 0.2s;
+}
